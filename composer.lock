@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e0bbe6beab92781e8f044394e517619f",
+    "content-hash": "74ac84079f8505f2ecfb009db658a50b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1855,6 +1855,63 @@
             "time": "2021-04-09T13:42:10+00:00"
         },
         {
+            "name": "overtrue/laravel-ueditor",
+            "version": "1.2.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/overtrue/laravel-ueditor.git",
+                "reference": "f73f6399a21ab8c6635e492b7b5a28caaafa4127"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/overtrue/laravel-ueditor/zipball/f73f6399a21ab8c6635e492b7b5a28caaafa4127",
+                "reference": "f73f6399a21ab8c6635e492b7b5a28caaafa4127",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "^1.10"
+            },
+            "suggest": {
+                "overtrue/laravel-filesystem-qiniu": "如果你想要使用七牛云存储，也许你需要安装它哦~"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Overtrue\\LaravelUEditor\\UEditorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Overtrue\\LaravelUEditor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "overtrue",
+                    "email": "anzhengchao@gmail.com"
+                }
+            ],
+            "description": "UEditor integration for Laravel.",
+            "support": {
+                "issues": "https://github.com/overtrue/laravel-ueditor/issues",
+                "source": "https://github.com/overtrue/laravel-ueditor/tree/master"
+            },
+            "abandoned": true,
+            "time": "2018-12-22T07:40:09+00:00"
+        },
+        {
             "name": "phpoption/phpoption",
             "version": "1.7.5",
             "source": {
@@ -2580,6 +2637,102 @@
                 }
             ],
             "time": "2020-08-18T17:17:46+00:00"
+        },
+        {
+            "name": "shaozeming/aliyun-core",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ShaoZeMing/Aliyun-Core.git",
+                "reference": "4be9605e153f9c41666624a36570637bc11ecde7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ShaoZeMing/Aliyun-Core/zipball/4be9605e153f9c41666624a36570637bc11ecde7",
+                "reference": "4be9605e153f9c41666624a36570637bc11ecde7",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ShaoZeMing\\Aliyun\\Core\\": "./src/"
+                },
+                "files": [
+                    "./src/Config.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ShaoZeMing",
+                    "email": "szm19920426@gmail.com"
+                }
+            ],
+            "description": "基于阿里云api sdk core封装的composer组件包，便于shaozeming/aliyun-vod，shaozeming/aliyun-oss(开发中)，shaozeming/aliyun-ecs(开发中)加载,便于维护和即时跟新官方sdk,解决核心类名在项目中冲突的问题",
+            "support": {
+                "issues": "https://github.com/ShaoZeMing/Aliyun-Core/issues",
+                "source": "https://github.com/ShaoZeMing/Aliyun-Core/tree/master"
+            },
+            "time": "2019-03-09T08:07:23+00:00"
+        },
+        {
+            "name": "shaozeming/aliyun-sts",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ShaoZeMing/Aliyun-Sts.git",
+                "reference": "d551e534ea9e5a210fa0df297a5b44c99655be1f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ShaoZeMing/Aliyun-Sts/zipball/d551e534ea9e5a210fa0df297a5b44c99655be1f",
+                "reference": "d551e534ea9e5a210fa0df297a5b44c99655be1f",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "shaozeming/aliyun-core": "^1.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9.9",
+                "phpunit/phpunit": "^6.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ShaoZeMing\\AliSTS\\": "./src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ShaoZeMing",
+                    "email": "szm19920426@gmail.com"
+                }
+            ],
+            "description": "基于阿里云openapi系列接口中STS最新版本的SDK进行封装的composer package",
+            "support": {
+                "issues": "https://github.com/ShaoZeMing/Aliyun-Sts/issues",
+                "source": "https://github.com/ShaoZeMing/Aliyun-Sts/tree/master"
+            },
+            "time": "2019-03-10T02:23:46+00:00"
         },
         {
             "name": "spatie/eloquent-sortable",
