@@ -8022,7 +8022,8 @@ var fillCharReg = new RegExp(domUtils.fillChar, 'g');
 //维护编辑器一下默认的不在插件中的配置项
 UE.Editor.defaultOptions = function(editor){
 
-    var _url = editor.options.UEDITOR_HOME_URL;
+       var _url = '/vendor/ueditor/';
+ // var _url = editor.options.UEDITOR_HOME_URL;
     return {
         isShow: true,
         initialContent: '',
